@@ -671,14 +671,41 @@
                     </div>
                 </article>
 
-                <article class="reveal group bg-white border-4 border-black p-4 shadow-hard mt-0 md:mt-20">
+                <article class="reveal group bg-white border-4 border-black p-4 shadow-hard mt-0 md:mt-20 relative flex flex-col justify-between">
                     <div class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6 group-hover:shadow-none transition-all flex flex-col justify-center items-center">
-                        <div class="text-white text-3xl font-black rotate-[-3deg] text-center px-4">Gym Website Platform<br><span class="text-neo-green font-mono text-sm">Royal Fitness & TRIFIT</span></div>
+                        <!-- Image Fallback (loads if video fails/is missing) -->
+                        <div class="absolute inset-0 z-0 bg-black flex flex-col justify-center items-center">
+                            <div class="text-white text-3xl font-black rotate-[-3deg] text-center px-4">Gym Website Platform<br><span class="text-neo-green font-mono text-sm">Royal Fitness & TRIFIT</span></div>
+                        </div>
+                        
+                        <!-- Video Preview -->
+                        <video autoplay muted loop playsinline class="project-video absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-500 group-hover:scale-105">
+                          <source src="./assets/royalvideo.mp4" type="video/mp4">
+                        </video>
+                        
+                        <!-- Dark Overlay on Hover -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 pointer-events-none"></div>
+
+                        <!-- Live Demo Button (Top Right of Image) -->
+                        <a href="https://royalfitnessgymwagholi.netlify.app/" target="_blank"
+                            class="absolute top-2 right-2 z-30 w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm opacity-90 group-hover:opacity-100 group-hover:shadow-[0_0_15px_rgba(51,255,87,0.6)]">
+                            <i class="ri-arrow-right-up-line text-2xl"></i>
+                        </a>
                     </div>
+                    
                     <div class="flex flex-col justify-between items-start h-full">
                         <div class="w-full">
-                            <h3 class="text-3xl font-black uppercase mb-2 group-hover:text-neo-blue transition-colors glitch-hover">
-                                Gym Website Platform</h3>
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-3xl font-black uppercase group-hover:text-neo-blue transition-colors glitch-hover">
+                                    Gym Website Platform</h3>
+                                
+                                <!-- GitHub Icon Button -->
+                                <a href="https://github.com/swapnilhingane18/GymWebsite.git" target="_blank"
+                                    class="text-gray-400 hover:text-white hover:bg-black border-2 border-transparent hover:border-black rounded-full p-1 transition-all group-hover:scale-110 group-hover:text-black group-hover:hover:text-neo-green cursor-hover ml-2">
+                                    <i class="ri-github-fill text-3xl"></i>
+                                </a>
+                            </div>
+
                             <div class="font-mono text-sm mb-4">
                                 <p><strong>Problem:</strong> Local gym businesses lacked a strong online presence and effective lead generation.</p>
                                 <p class="mt-2"><strong>Solution:</strong> Designed and developed modern, responsive gym websites with optimized UI/UX and direct customer interaction features.</p>
