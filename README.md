@@ -24,7 +24,7 @@ I am a passionate Full Stack Java Developer focused on building scalable and rea
 
 ## Projects
 - **Gym Website Platform (Royal Fitness & TRIFIT):** Designed and developed modern, responsive gym websites with optimized UI/UX and direct customer interaction features including WhatsApp & Call integrations. Deployed on Netlify.
-- **Surveillance Robot:** Built a Wi-Fi controlled smart surveillance robot using ESP32-CAM for live streaming and environmental monitoring to address the lack of affordable remote monitoring in hazardous environments.
+- **AI-Powered Smart Surveillance System (ESP32-CAM):** Built a real-time AI-powered surveillance system using ESP32-CAM and Python that performs face detection and recognition, streams live video, and sends automated Telegram alerts with captured images. Reduced stream latency to under 500ms and created an end-to-end scalable AI + IoT security solution.
 - **Hypefolio:** Engineered a high-performance, brutalist-themed responsive portfolio to cleanly showcase projects, skills, and achievements.
 
 ## Contact
