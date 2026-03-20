@@ -214,6 +214,45 @@
             }
         }
 
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            padding: 15px;
+        }
+
+        .project-media {
+            height: 220px;
+            overflow: hidden;
+            border-radius: 6px;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .project-media img,
+        .project-media video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-body p {
+            margin-bottom: 10px;
+        }
+
+        .project-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
         .project-title-row {
             display: flex;
             justify-content: space-between;
@@ -685,9 +724,9 @@
                 Projects I’ve built to solve real-world problems and deliver business value
             </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-                <article class="reveal group bg-white border-4 border-black p-4 shadow-hard flex flex-col justify-between h-auto">
-                    <div class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6 group-hover:shadow-none transition-all">
+            <div class="projects-grid items-start">
+                <article class="reveal group bg-white border-4 border-black project-card shadow-hard">
+                    <div class="project-media bg-black border-2 border-black transition-all">
                         <img src="./assets/images/cars.jpg" alt="Surveillance System Preview"
                             class="project-image w-full h-full object-cover z-0 transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
                         <!-- Dark Overlay on Hover -->
@@ -696,65 +735,65 @@
                             ★ Featured AI+IoT
                         </div>
                     </div>
-                    <div class="flex flex-col flex-grow justify-between w-full h-full">
-                        <div class="w-full flex flex-col">
-                            <div class="project-title-row mb-2">
-                                <h3 class="text-2xl md:text-3xl font-black uppercase group-hover:text-neo-purple transition-colors glitch-hover leading-tight">
-                                    AI Smart Surveillance</h3>
-                                <span class="badge featured-badge">⭐ Featured Project</span>
-                            </div>
-                            <!-- GitHub Icon Button -->
+                    
+                    <div class="flex flex-col w-full h-full">
+                        <div class="project-title-row mb-2">
+                            <h3 class="text-2xl md:text-3xl font-black uppercase group-hover:text-neo-purple transition-colors glitch-hover leading-tight">
+                                AI Smart Surveillance</h3>
+                            <span class="badge featured-badge">⭐ Featured Project</span>
+                        </div>
+                        
+                        <!-- GitHub Icon Button -->
+                        <div class="mb-4">
                             <a href="https://github.com/swapnilhingane18/Esp32_Surviellance-car.git" target="_blank"
-                                class="text-gray-400 hover:text-white hover:bg-black border-2 border-transparent hover:border-black rounded-full p-1 transition-all group-hover:scale-110 group-hover:text-black group-hover:hover:text-neo-green cursor-hover ml-2 flex-shrink-0 flex items-center justify-center">
+                                class="text-gray-400 hover:text-white hover:bg-black border-2 border-transparent hover:border-black rounded-full p-1 transition-all group-hover:scale-110 group-hover:text-black group-hover:hover:text-neo-green cursor-hover flex-shrink-0 inline-flex items-center justify-center">
                                 <i class="ri-github-fill text-3xl"></i>
                             </a>
-                            </div>
-                            <div class="font-mono text-sm mb-4">
-                                <p><strong>Problem:</strong> Traditional CCTV lacks intelligence and real-time alert capabilities for identifying intruders.</p>
-                                <p class="mt-2"><strong>Solution:</strong> Built an AI-powered surveillance system using ESP32-CAM & Python for real-time face detection, live streaming, and Telegram alerts.</p>
-                                <p class="mt-2 text-xs"><strong>Key Features:</strong> Live streaming, face recognition, Telegram alerts with images, Flask web dashboard.</p>
-                                <p class="mt-2 text-xs"><strong>Impact:</strong> Standalone end-to-end AI + IoT system for scalable smart security applications.</p>
-                                <p class="mt-2 text-xs italic opacity-80">Challenges solved: Reduced stream latency (~50s to <500ms), optimized frame buffering.</p>
-                            </div>
-                            <div class="flex gap-2 font-mono text-[10px] font-bold flex-wrap mb-6">
-                                <span class="bg-neo-black text-white px-2 py-1">ESP32-CAM</span>
-                                <span class="bg-neo-black text-white px-2 py-1">Python</span>
-                                <span class="bg-neo-black text-white px-2 py-1">OpenCV</span>
-                                <span class="bg-neo-black text-white px-2 py-1">InsightFace</span>
-                                <span class="bg-neo-black text-white px-2 py-1">Flask</span>
-                                <span class="bg-neo-black text-white px-2 py-1">Telegram API</span>
-                            </div>
+                        </div>
 
-                            <!-- Project Links & Features Section -->
-                            <div class="mt-auto pt-4 border-t-2 border-dashed border-gray-300 w-full">
-                                <p class="font-mono text-[10px] text-gray-500 font-bold uppercase mb-3">Project Links &amp; Features</p>
-                                <div class="grid grid-cols-2 md:grid-cols-3 gap-3 w-full">
-                                    <!-- Block 1: GitHub Repo -->
-                                    <a href="https://github.com/swapnilhingane18/Esp32_Surviellance-car.git" target="_blank"
-                                        class="bg-black text-white border-2 border-transparent hover:border-neo-yellow py-2 px-2 flex flex-col xl:flex-row items-center justify-center gap-1 xl:gap-2 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_12px_rgba(251,255,72,0.4)] cursor-hover group/btn">
-                                        <i class="ri-github-fill text-xl group-hover/btn:text-neo-yellow"></i>
-                                        <span class="font-mono font-bold text-[10px] uppercase text-center">View Code</span>
-                                    </a>
-                                    
-                                    <!-- Block 2: Live Stream / Demo -->
-                                    <div class="bg-black text-white border-2 border-transparent py-2 px-2 flex flex-col xl:flex-row items-center justify-center gap-1 xl:gap-2 opacity-50 cursor-not-allowed">
-                                        <i class="ri-vidicon-line text-xl"></i>
-                                        <span class="font-mono font-bold text-[10px] uppercase text-center">Live Demo</span>
-                                    </div>
-                                    
-                                    <!-- Block 3: AI Detection -->
-                                    <div class="bg-black text-white border-2 border-transparent hover:border-neo-pink py-2 px-2 flex flex-col xl:flex-row items-center justify-center gap-1 xl:gap-2 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_12px_rgba(255,112,166,0.4)] cursor-hover group/btn col-span-2 md:col-span-1">
-                                        <i class="ri-brain-line text-xl group-hover/btn:text-neo-pink"></i>
-                                        <span class="font-mono font-bold text-[10px] uppercase text-center">AI Detection</span>
-                                    </div>
+                        <div class="project-body font-mono text-sm">
+                            <p><strong>Problem:</strong> Traditional CCTV lacks intelligence and real-time alert capabilities for identifying intruders.</p>
+                            <p><strong>Solution:</strong> Built an AI-powered surveillance system using ESP32-CAM & Python for real-time face detection, live streaming, and Telegram alerts.</p>
+                            <p class="text-xs"><strong>Key Features:</strong> Live streaming, face recognition, Telegram alerts with images, Flask web dashboard.</p>
+                            <p class="text-xs"><strong>Impact:</strong> Standalone end-to-end AI + IoT system for scalable smart security applications.</p>
+                            <p class="text-xs italic opacity-80">Challenges solved: Reduced stream latency (~50s to <500ms), optimized frame buffering.</p>
+                        </div>
+                        
+                        <div class="project-bottom">
+                            <span class="bg-neo-black text-white px-2 py-1 font-mono text-[10px] font-bold">ESP32-CAM</span>
+                            <span class="bg-neo-black text-white px-2 py-1 font-mono text-[10px] font-bold">Python</span>
+                            <span class="bg-neo-black text-white px-2 py-1 font-mono text-[10px] font-bold">OpenCV</span>
+                            <span class="bg-neo-black text-white px-2 py-1 font-mono text-[10px] font-bold">InsightFace</span>
+                            <span class="bg-neo-black text-white px-2 py-1 font-mono text-[10px] font-bold">Flask</span>
+                            <span class="bg-neo-black text-white px-2 py-1 font-mono text-[10px] font-bold">Telegram API</span>
+                        </div>
+
+                        <!-- Project Links & Features Section -->
+                        <div class="mt-4 pt-4 border-t-2 border-dashed border-gray-300 w-full">
+                            <p class="font-mono text-[10px] text-gray-500 font-bold uppercase mb-3">Project Links &amp; Features</p>
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-3 w-full">
+                                <!-- Block 1: GitHub Repo -->
+                                <a href="https://github.com/swapnilhingane18/Esp32_Surviellance-car.git" target="_blank"
+                                    class="bg-black text-white border-2 border-transparent hover:border-neo-yellow py-2 px-2 flex flex-col xl:flex-row items-center justify-center gap-1 xl:gap-2 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_12px_rgba(251,255,72,0.4)] cursor-hover group/btn">
+                                    <i class="ri-github-fill text-xl group-hover/btn:text-neo-yellow"></i>
+                                    <span class="font-mono font-bold text-[10px] uppercase text-center">View Code</span>
+                                </a>
+                                
+                                <!-- Block 2: Live Stream / Demo -->
+                                <div class="bg-black text-white border-2 border-transparent py-2 px-2 flex flex-col xl:flex-row items-center justify-center gap-1 xl:gap-2 opacity-50 cursor-not-allowed">
+                                    <i class="ri-vidicon-line text-xl"></i>
+                                    <span class="font-mono font-bold text-[10px] uppercase text-center">Live Demo</span>
+                                </div>
+                                
+                                <!-- Block 3: AI Detection -->
+                                <div class="bg-black text-white border-2 border-transparent hover:border-neo-pink py-2 px-2 flex flex-col xl:flex-row items-center justify-center gap-1 xl:gap-2 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_12px_rgba(255,112,166,0.4)] cursor-hover group/btn col-span-2 md:col-span-1">
+                                    <i class="ri-brain-line text-xl group-hover/btn:text-neo-pink"></i>
+                                    <span class="font-mono font-bold text-[10px] uppercase text-center">AI Detection</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </article>
-
-                <article class="reveal group bg-white border-4 border-black p-4 shadow-hard mt-0 relative flex flex-col justify-between h-auto">
-                    <div class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6 group-hover:shadow-none transition-all flex flex-col justify-center items-center">
+                    <                <article class="reveal group bg-white border-4 border-black project-card shadow-hard mt-0 relative">
+                    <div class="project-media bg-black border-2 border-black transition-all flex flex-col justify-center items-center">
                         <!-- Image Fallback (loads if video fails/is missing) -->
                         <img src="./assets/images/gym-preview.jpg" alt="Gym Website Preview" class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100" />
                         
@@ -773,59 +812,66 @@
                         </a>
                     </div>
                     
-                    <div class="flex flex-col flex-grow justify-between w-full h-full">
-                        <div class="w-full flex flex-col">
-                            <div class="project-title-row mb-2">
-                                <h3 class="text-3xl font-black uppercase group-hover:text-neo-blue transition-colors glitch-hover leading-tight">
-                                    Gym Website Platform</h3>
-                                <span class="badge client-badge">💼 Client Project</span>
-                            </div>
-                            <!-- GitHub Icon Button -->
+                    <div class="flex flex-col w-full h-full">
+                        <div class="project-title-row mb-2">
+                            <h3 class="text-3xl font-black uppercase group-hover:text-neo-blue transition-colors glitch-hover leading-tight">
+                                Gym Website Platform</h3>
+                            <span class="badge client-badge">💼 Client Project</span>
+                        </div>
+                        
+                        <!-- GitHub Icon Button -->
+                        <div class="mb-4">
                             <a href="https://github.com/swapnilhingane18/GymWebsite.git" target="_blank"
-                                class="text-gray-400 hover:text-white hover:bg-black border-2 border-transparent hover:border-black rounded-full p-1 transition-all group-hover:scale-110 group-hover:text-black group-hover:hover:text-neo-green cursor-hover ml-2 flex-shrink-0 flex items-center justify-center">
+                                class="text-gray-400 hover:text-white hover:bg-black border-2 border-transparent hover:border-black rounded-full p-1 transition-all group-hover:scale-110 group-hover:text-black group-hover:hover:text-neo-green cursor-hover flex-shrink-0 inline-flex items-center justify-center">
                                 <i class="ri-github-fill text-3xl"></i>
                             </a>
-                            </div>
+                        </div>
 
-                            <div class="font-mono text-sm mb-4">
-                                <p><strong>Problem:</strong> Local gym businesses lacked a strong online presence and effective lead generation.</p>
-                                <p class="mt-2"><strong>Solution:</strong> Designed and developed modern, responsive gym websites with optimized UI/UX and direct customer interaction features.</p>
-                                <p class="mt-2 text-xs"><strong>Key Features:</strong> Mobile-first design, WhatsApp/Call integration, Free Trial forms, Section-based scrolling, Modern UI.</p>
-                                <p class="mt-2 text-xs"><strong>Impact:</strong> Improved business visibility and enabled direct customer engagement.</p>
-                                <p class="mt-2 text-xs italic opacity-80">Challenges solved: z-index mobile nav conflicts, spacing issues.</p>
-                            </div>
-                            <div class="flex gap-2 font-mono text-[10px] font-bold flex-wrap mb-4">
-                                <span class="bg-neo-black text-white px-2 py-1">React (Vite)</span>
-                                <span class="bg-neo-black text-white px-2 py-1">Tailwind CSS</span>
-                                <span class="bg-neo-black text-white px-2 py-1">JavaScript</span>
-                                <span class="bg-neo-black text-white px-2 py-1">Google Maps</span>
-                            </div>
+                        <div class="project-body font-mono text-sm">
+                            <p><strong>Problem:</strong> Local gym businesses lacked a strong online presence and effective lead generation.</p>
+                            <p><strong>Solution:</strong> Designed and developed modern, responsive gym websites with optimized UI/UX and direct customer interaction features.</p>
+                            <p class="text-xs"><strong>Key Features:</strong> Mobile-first design, WhatsApp/Call integration, Free Trial forms, Section-based scrolling, Modern UI.</p>
+                            <p class="text-xs"><strong>Impact:</strong> Improved business visibility and enabled direct customer engagement.</p>
+                            <p class="text-xs italic opacity-80">Challenges solved: z-index mobile nav conflicts, spacing issues.</p>
+                        </div>
+                        <div class="project-bottom">
+                            <span class="bg-neo-black text-white px-2 py-1 font-mono text-[10px] font-bold">React (Vite)</span>
+                            <span class="bg-neo-black text-white px-2 py-1 font-mono text-[10px] font-bold">Tailwind CSS</span>
+                            <span class="bg-neo-black text-white px-2 py-1 font-mono text-[10px] font-bold">JavaScript</span>
+                            <span class="bg-neo-black text-white px-2 py-1 font-mono text-[10px] font-bold">Google Maps</span>
                         </div>
                     </div>
+                </article>    </div>
                 </article>
 
-                <article class="reveal group bg-white border-4 border-black p-4 shadow-hard">
-                    <div
-                        class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6 group-hover:shadow-none transition-all">
+                <article class="reveal group bg-white border-4 border-black project-card shadow-hard">
+                    <div class="project-media bg-black border-2 border-black transition-all">
                         <img src="Assets/images/portfolio.png" alt="Personal Portfolio Website"
                             class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
                     </div>
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <h3
-                                class="text-4xl font-black uppercase mb-2 group-hover:text-neo-pink transition-colors glitch-hover">
+                    
+                    <div class="flex flex-col w-full h-full">
+                        <div class="project-title-row mb-2">
+                            <h3 class="text-4xl font-black uppercase group-hover:text-neo-pink transition-colors glitch-hover">
                                 Hypefolio</h3>
-                            <div class="font-mono text-sm mb-4 max-w-xs"><p><strong>Problem:</strong> Standard portfolio templates lack uniqueness and fail to engage viewers.</p><p class="mt-2"><strong>Solution:</strong> Engineered a high-performance, brutalist-themed responsive portfolio to cleanly showcase projects, skills, and achievements.</p></div>
-                            <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
-                                <span class="bg-neo-black text-white px-2 py-1">HTML</span>
-                                <span class="bg-neo-black text-white px-2 py-1">CSS</span>
-                                <span class="bg-neo-black text-white px-2 py-1">JavaScript</span>
-                            </div>
                         </div>
-                        <a href="https://swapnilhingane.netlify.app/"
-                            class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm">
-                            <i class="ri-arrow-right-up-line text-2xl"></i>
-                        </a>
+
+                        <div class="project-body font-mono text-sm">
+                            <p><strong>Problem:</strong> Standard portfolio templates lack uniqueness and fail to engage viewers.</p>
+                            <p><strong>Solution:</strong> Engineered a high-performance, brutalist-themed responsive portfolio to showcase projects and skills.</p>
+                        </div>
+                        
+                        <div class="project-bottom items-center justify-between">
+                            <div class="flex gap-2">
+                                <span class="bg-neo-black text-white px-2 py-1 font-mono text-[10px] font-bold">HTML</span>
+                                <span class="bg-neo-black text-white px-2 py-1 font-mono text-[10px] font-bold">CSS</span>
+                                <span class="bg-neo-black text-white px-2 py-1 font-mono text-[10px] font-bold">JavaScript</span>
+                            </div>
+                            <a href="https://swapnilhingane.netlify.app/"
+                                class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm">
+                                <i class="ri-arrow-right-up-line text-2xl"></i>
+                            </a>
+                        </div>
                     </div>
                 </article>
             </div>
