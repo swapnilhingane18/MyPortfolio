@@ -1,9 +1,12 @@
 # Swapnil Hingane
 
-> Full Stack Java Developer specializing in scalable web applications using Java, Spring Boot, MySQL, and modern frontend tools.
+> Full Stack Java Developer specializing in scalable, real-world web applications using Java, Spring Boot, MySQL, and modern frontend tools.
 
 ## About
-I am a passionate Full Stack Java Developer focused on building scalable and real-world web applications. I specialize in backend development using Java and Spring Boot, along with modern frontend technologies like React. I also work as a freelance developer, creating websites for local businesses and helping them grow their online presence.
+I am a passionate Full Stack Java Developer focused on building scalable and real-world web applications. I specialize in backend development using Java and Spring Boot, along with modern frontend technologies like React. I also work as a freelance developer, building websites for local businesses and helping them improve their online presence and customer reach.
+
+✔ Worked on real-world freelance projects for local businesses  
+✔ Delivered practical solutions focused on business growth  
 
 ## Skills
 - **Languages:** Java, HTML5, CSS3, JavaScript
@@ -12,19 +15,22 @@ I am a passionate Full Stack Java Developer focused on building scalable and rea
 - **Tools:** Git, GitHub, REST APIs
 
 ## Experience
-**Freelance Web Developer** *(Self-Employed)* | 03/2023 - Present
-- Designed and developed responsive websites for local businesses
-- Delivered end-to-end solutions (design, development, deployment)
-- Worked directly with clients
-- Improved UI/UX and performance
+**Freelance Web Developer** *(Self-Employed)* | 2023 - Present
+- Developed and deployed multiple gym websites for local businesses (Royal Fitness, TRIFIT) on Netlify
+- Designed modern, responsive UI focused on user experience and lead generation
+- Integrated WhatsApp, Call, and form-based enquiry systems
+- Managed complete project lifecycle from design to deployment
+- Solved real-world UI/UX and mobile responsiveness issues
 
 ## Projects
+- **Gym Website Platform (Royal Fitness & TRIFIT):** Designed and developed modern, responsive gym websites with optimized UI/UX and direct customer interaction features including WhatsApp & Call integrations. Deployed on Netlify.
 - **Surveillance Robot:** Built a Wi-Fi controlled smart surveillance robot using ESP32-CAM for live streaming and environmental monitoring to address the lack of affordable remote monitoring in hazardous environments.
-- **JobTracker:** Developed a responsive web app to efficiently track job applications, manage statuses, and organize details for job seekers.
 - **Hypefolio:** Engineered a high-performance, brutalist-themed responsive portfolio to cleanly showcase projects, skills, and achievements.
 
 ## Contact
-Have a project in mind or want to collaborate? Let's build something impactful together.
+Looking to build a website or hire a developer?
+I’m available for freelance projects and full-time opportunities.
+Let’s connect and create something impactful.
 - Email: swapnilhingane9290@gmail.com
 - GitHub: [swapnilhingane18](https://github.com/swapnilhingane18)
 - LinkedIn: [Swapnil Hingane](https://www.linkedin.com/in/swapnil-hingane-943867294)
