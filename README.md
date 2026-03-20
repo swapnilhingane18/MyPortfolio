@@ -1,97 +1,30 @@
-# ARHAM.exe // PORTFOLIO_V2
+# Swapnil Hingane
 
-```
-    ___    ____  __  ______    __  ___          ____  ____  ____  __________________  __    ________ 
-   /   |  / __ \/ / / / __ \  /  |/  /         / __ \/ __ \/ __ \/_  __/ ____/ __ \/ /   /  _/ __ \
-  / /| | / /_/ / /_/ / /_/ / / /|_/ /  ______ / /_/ / / / / /_/ / / / / /_  / / / / /    / // / / /
- / ___ |/ _, _/ __  / __  | / /  / /  /_____// ____/ /_/ / _, _/ / / / __/ / /_/ / /____/ // /_/ / 
-/_/  |_/_/ |_/_/ /_/_/ |_| /_/  /_/         /_/    \____/_/ |_| /_/ /_/    \____/_____/___/\____/  
-                                                            
->> SYSTEM_STATUS: ONLINE
->> THEME: NEO_BRUTALISM
->> VERSION: 2.0.0
-```
+> Full Stack Java Developer specializing in scalable web applications using Java, Spring Boot, MySQL, and modern frontend tools.
 
-> **WARNING**: This is NOT a standard portfolio. It is a raw, unfiltered expression of code. No cookies. No trackers. Just pure HTML, CSS, and JS anarchy.
+## About
+I am a passionate Full Stack Java Developer focused on building scalable and real-world web applications. I specialize in backend development using Java and Spring Boot, along with modern frontend technologies like React. I also work as a freelance developer, creating websites for local businesses and helping them grow their online presence.
 
----
+## Skills
+- **Languages:** Java, HTML5, CSS3, JavaScript
+- **Frameworks/Libraries:** Spring Boot, React, Tailwind CSS
+- **Databases:** MySQL
+- **Tools:** Git, GitHub, REST APIs
 
-## /// MANIFESTO
+## Experience
+**Freelance Web Developer** *(Self-Employed)* | 03/2023 - Present
+- Designed and developed responsive websites for local businesses
+- Delivered end-to-end solutions (design, development, deployment)
+- Worked directly with clients
+- Improved UI/UX and performance
 
-**Design is dying.** The web has become a sea of identical, sanitized templates. We are here to break the grid.
-This portfolio embraces **Neo-Brutalism**:
-- High Contrast
-- Raw Typography
-- Asymmetrical Layouts
-- "Ugly" on Purpose
+## Projects
+- **Surveillance Robot:** Built a Wi-Fi controlled smart surveillance robot using ESP32-CAM for live streaming and environmental monitoring to address the lack of affordable remote monitoring in hazardous environments.
+- **JobTracker:** Developed a responsive web app to efficiently track job applications, manage statuses, and organize details for job seekers.
+- **Hypefolio:** Engineered a high-performance, brutalist-themed responsive portfolio to cleanly showcase projects, skills, and achievements.
 
-It's not about being pretty. It's about being **BOLD**.
-
----
-
-## /// TECH_STACK
-
-| COMPONENT | TECHNOLOGY | STATUS |
-| :--- | :--- | :--- |
-| **CORE** | `HTML5` | [OPTIMIZED] |
-| **STYLING** | `TailwindCSS` | [LOADED] |
-| **SCRIPTING** | `Vanilla JS` | [ACTIVE] |
-| **APIs** | `GitHub API` + `LeetCard` | [STREAMING] |
-| **ICONS** | `Remix Icons` | [LINKED] |
-| **FONTS** | `Space Grotesk` + `JetBrains Mono` | [IMPORTED] |
-
----
-
-## /// FEATURES_LOG
-
-### 01. CUSTOM_CURSOR
-> A custom-built cursor that reacts to interactive elements.
-> - **Normal State**: Small crosshair/dot.
-> - **Hover State**: Expands to a Neo-Yellow block with black borders.
-
-### 02. GLITCH_EFFECTS
-> CSS-only glitch animations on hover states.
-> - `mix-blend-mode: difference` for high contrast.
-> - Random translation keyframes for that "broken" feel.
-
-### 03. MARQUEE_SCROLL
-> Infinite scrolling text banners.
-> - Pure CSS animation.
-> - **Direction**: Left-to-Right & Right-to-Left.
-
-### 04. REVEAL_ANIMATION
-> Elements reveal themselves as you scroll.
-> - `IntersectionObserver` API.
-> - Smooth translate-Y transitions.
-
-### 05. CODING_STATS_INTEGRATION
-> Real-time data visualization of development activity.
-> - **Dual-Profile Interface**: Side-by-side GitHub and LeetCode stats.
-> - **Live GitHub API**: Dynamic fetching of Repos, Followers, and Commits.
-> - **LeetCard Integration**: Real-time LeetCode problem-solving heatmap.
-> - **Parallel Layout**: Perfectly balanced columns with mirrored headers and activity matrices.
-
----
-
-## /// FILE_STRUCTURE
-
-```bash
-.
-├── Assets/
-│   ├── images/          # [DIR] Project thumbnails & Avatar
-│   └── Resume/          # [DIR] CV PDF file
-├── index.html           # [FILE] Main Entry Point
-└── README.md            # [FILE] You are here
-```
-
-## /// CONTACT_COORDINATES
-
-**TRANSMISSION OPEN:**
-- **MAIL**: `topiwalaarham@gmail.com`
-- **GITHUB**: `Arham43-ops`
-- **LOCATION**: `Remote / Earth`
-
-> "I build digital products that refuse to be boring."
-
----
-**© 2025 ARHAM.exe // SYSTEM_END**
+## Contact
+Have a project in mind or want to collaborate? Let's build something impactful together.
+- Email: swapnilhingane9290@gmail.com
+- GitHub: [swapnilhingane18](https://github.com/swapnilhingane18)
+- LinkedIn: [Swapnil Hingane](https://www.linkedin.com/in/swapnil-hingane-943867294)
