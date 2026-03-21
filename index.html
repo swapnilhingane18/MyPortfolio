@@ -342,97 +342,52 @@
             margin-bottom: 12px;
         }
 
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
         @media (max-width: 768px) {
-            /* 1. TYPOGRAPHY SCALING */
-            h1, h2, .text-5xl, .text-6xl, .text-8xl {
-                font-size: clamp(28px, 8vw, 36px) !important;
-                line-height: 1.1 !important;
-            }
-            h3, h4, .text-xl, .text-2xl, .text-3xl {
-                font-size: clamp(16px, 5vw, 18px) !important;
-                line-height: 1.3 !important;
-            }
-            p, .text-sm, .text-lg, .text-base {
-                font-size: clamp(14px, 4vw, 15px) !important;
-                line-height: 1.5 !important;
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
             }
 
-            /* 2. GLOBAL SPACING FIX */
-            section {
-                padding-top: 50px !important;
-                padding-bottom: 50px !important;
-            }
-            .project-body {
-                padding: 16px 16px 12px 16px !important;
-            }
-            .project-bottom {
-                padding: 0 16px 16px 16px !important;
-            }
-
-            /* 3. GRID SYSTEM FIX */
-            .projects-grid, .grid-cols-2, .grid-cols-4, .grid-cols-3 {
-                grid-template-columns: 1fr !important;
-                gap: 16px !important;
-            }
-
-            /* 4. PROJECT CARDS FIX */
             .project-card {
-                width: 100% !important;
-                overflow: hidden !important;
+                padding: 16px;
             }
-            .project-media {
-                height: 180px !important;
-                width: 100% !important;
-            }
+
             .project-media img, .project-media video {
-                height: 100% !important;
-                width: 100% !important;
-                object-fit: cover !important;
+                height: 180px;
             }
-            .project-title-row {
+
+            .hero h1, .text-8xl, .text-6xl {
+                font-size: 32px;
+                line-height: 1.2;
+            }
+
+            .hero p {
+                font-size: 14px;
+            }
+
+            .about-container, .flex.flex-col.md\:flex-row {
                 flex-direction: column;
-                align-items: flex-start;
-                gap: 5px;
-            }
-            .w-10.h-10 {
-                width: 32px !important;
-                height: 32px !important;
-                min-height: 32px !important;
+                gap: 20px;
             }
 
-            /* 5. NAVBAR FIX */
-            nav {
-                padding: 10px !important;
-            }
-            nav .max-w-7xl {
-                flex-direction: column !important;
-                gap: 10px !important;
-                align-items: stretch !important;
-            }
-            nav .hidden.md\:flex {
-                display: flex !important;
-                flex-wrap: wrap !important;
-                justify-content: center !important;
-                gap: 6px !important;
-                padding: 6px !important;
-            }
-            nav a {
-                flex: 1 1 auto;
-                text-align: center;
-                font-size: 12px !important;
-                padding: 8px 6px !important;
+            .experience-card, .bg-white.p-8, .bg-white.p-6, .bg-neo-black.text-white.p-8 {
+                padding: 16px;
             }
 
-            /* 6. TEXT WRAPPING */
-            * {
-                word-wrap: break-word !important;
-                overflow-wrap: break-word !important;
-            }
-
-            /* 7. BUTTON FIX (increase tap area generally but keep nav separate above) */
-            a.inline-block, button, .bg-neo-black.text-white, .px-10.py-4 {
-                min-height: 40px !important;
-                padding: 10px 14px !important;
+            button, .btn, .px-10.py-4, a.inline-block {
+                padding: 10px 14px;
+                font-size: 14px;
             }
         }
     </style>
