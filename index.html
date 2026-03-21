@@ -342,6 +342,10 @@
             margin-bottom: 12px;
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
         img {
             max-width: 100%;
             height: auto;
@@ -354,6 +358,66 @@
         }
 
         @media (max-width: 768px) {
+            section {
+                padding: 50px 0;
+            }
+
+            .container {
+                width: 92%;
+                margin: 0 auto;
+            }
+
+            .hero {
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+                line-height: 1.2;
+            }
+
+            .hero p {
+                font-size: 14px;
+                margin-top: 10px;
+            }
+
+            .hero .buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 20px;
+            }
+
+            .about-container {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .about-img {
+                width: 100%;
+                text-align: center;
+            }
+
+            .about-content {
+                width: 100%;
+            }
+
+            .tech-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .experience-card {
+                padding: 16px;
+                margin-bottom: 20px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
             .projects-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
@@ -367,25 +431,18 @@
                 height: 180px;
             }
 
-            .hero h1, .text-8xl, .text-6xl {
-                font-size: 32px;
-                line-height: 1.2;
-            }
-
-            .hero p {
-                font-size: 14px;
-            }
-
-            .about-container, .flex.flex-col.md\:flex-row {
+            .contact-container {
+                display: flex;
                 flex-direction: column;
                 gap: 20px;
             }
 
-            .experience-card, .bg-white.p-8, .bg-white.p-6, .bg-neo-black.text-white.p-8 {
-                padding: 16px;
+            .contact-form input,
+            .contact-form textarea {
+                width: 100%;
             }
 
-            button, .btn, .px-10.py-4, a.inline-block {
+            button, .btn {
                 padding: 10px 14px;
                 font-size: 14px;
             }
